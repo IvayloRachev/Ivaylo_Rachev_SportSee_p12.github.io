@@ -1,0 +1,76 @@
+.nutrient {
+    background-color: var(--background-color-light);
+    width: 200px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 70%;
+}
+
+.nutrient__icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.nutrient__icon--calories {
+    background-color: rgba(255,0,0,0.06);
+}
+
+.nutrient__icon--proteins {
+    background-color: rgba(74, 184, 255, 0.1);
+  }
+  
+  .nutrient__icon--carbohydrates {
+    background-color: rgba(249, 206, 35, 0.1);
+  }
+  
+  .nutrient__icon--lipids {
+    background-color: rgba(253, 81, 129, 0.1);
+  }
+  
+  .nutrient__informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    margin-left: 24px;
+  }
+  
+  .nutrient__quantity {
+    color: var(--text-color-dark-2);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: var(--font-size-20);
+    font-weight: 700;
+  }
+  
+  .nutrient__name {
+    color: var(--text-color-light-2);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--font-size-14);
+    font-weight: 500;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .nutrient {
+      width: 258px;
+      height: 110px;
+    }
+  
+    .nutrient__icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .nutrient__informations {
+      height: 60px;
+    }
+  }
