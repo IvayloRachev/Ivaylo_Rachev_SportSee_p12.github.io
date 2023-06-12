@@ -1,0 +1,79 @@
+.dashboard {
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    margin: auto;
+}
+
+.dashboard__header .greeting {
+    font-size: var(--font-size-32);
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-weight: 500;
+}
+
+.dashboard__header .firstname {
+    color: var(--primary-color);
+}
+
+.dashboard__header .motivationalSpeech {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+.dashboard__content {
+    display: flex;
+    position: relative;
+}
+
+.dashboard__charts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.dashboard__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard__row:first-child {
+    margin-bottom: 20px;
+}
+
+.dashboard__nutrients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    width: 70%;
+}
+
+.chart-item {
+    width: 30%;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .dashboard__header .motivationalSpeech {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  
+    .dashboard__row:first-child{
+      margin-bottom: 30px;
+    }
+  
+    .chart-item {
+      width: 230px;
+      height: 220px;
+      margin-top: 0;
+    }
+  }
