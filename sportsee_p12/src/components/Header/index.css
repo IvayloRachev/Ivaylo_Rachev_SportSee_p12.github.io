@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    background-color: var(--background-color-dark);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  }
+  
+  .header__logo {
+    width: 178px;
+  }
+  
+  .header__navbar {
+    width: 70%;
+    margin-right: 5%;
+  }
+  
+  .header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__navItem {
+    list-style: none;
+  }
+  
+  .header__navLink {
+    color: var(--text-color-light-1);
+    text-decoration: none;
+    font-size: var(--font-size-24);
+  }
