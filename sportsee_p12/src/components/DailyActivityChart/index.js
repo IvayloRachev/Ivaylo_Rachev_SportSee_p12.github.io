@@ -70,8 +70,8 @@ function DailyActivityChart({ data }) {
                     fontWeight: 500,
                 }} 
             />
-            <YAxis yAxisId="kg" orientation="right" tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
-            <YAxis hide={true} yAxisId="kal" tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
+            <YAxis yAxisId="kg" hide={true} tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
+            <YAxis orientation="right" yAxisId="kal" tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
             <Tooltip 
                 content={<CustomTooltip />}
                 wrapperStyle={{ outline: 'none' }}
