@@ -47,7 +47,7 @@ function DailyActivityChart({ data }) {
                     <li className='li-cal'><span className='cal'>Calories brûlées (kCal)</span></li>
                 </ul>
             </div>
-            <ResponsiveContainer width="100%" height={210}>
+            <ResponsiveContainer width="100%" height="100%">
             <BarChart
                 data={dataChart}
                 barSize={7}
@@ -70,18 +70,21 @@ function DailyActivityChart({ data }) {
                     fontWeight: 500,
                 }} 
             />
-            <YAxis axisLine={false} tickLine={false} tickCount={3} orientation="right" />
+            <YAxis yAxisId="kg" orientation="right" tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
+            <YAxis hide={true} yAxisId="kal" tickCount={3} ticks={[100, 300, 500]} axisLine={false} tickLine={false} />
             <Tooltip 
                 content={<CustomTooltip />}
                 wrapperStyle={{ outline: 'none' }}
             />
             <Bar
+                yAxisId="kg"
                 name="Poids (kg)"
                 dataKey="weight"
                 fill="#282D30"
                 radius={[3.5, 3.5, 0, 0]}
             />
             <Bar
+                yAxisId="kal"
                 name="Calories brûlées (kCal)"
                 dataKey="cal"
                 fill="#E60000"
